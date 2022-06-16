@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Lato;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  /* background-color: rgb(184, 178, 178);
+  background: url(https://images.pexels.com/photos/1533720/pexels-photo-1533720.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+    no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+
+nav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: aliceblue;
+}
+
+.brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn {
+}
+
+.btnPrimary {
+}

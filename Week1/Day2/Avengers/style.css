@@ -1,0 +1,56 @@
+nav {
+  list-style-type: none;
+  margin: -10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: black;
+}
+
+nav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+nav a:hover {
+  background-color: navy;
+}
+
+.logoImage {
+  float: left;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+body {
+  background-image: url(C:\\Users\\rkeni\\Downloads\\thor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.infoSection {
+  margin-top: 27%;
+  margin-left: 6%;
+}
+
+h1 {
+  font-family: Marvel;
+  font-size: 100px;
+}
+
+p {
+  font-family: fantasy;
+  font-size: 33px;
+  text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
