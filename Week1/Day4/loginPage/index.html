@@ -13,8 +13,9 @@
   </head>
   <body>
     <div class="right">
-      <h1>Hello, friend!</h1>
-      <p>Enter your personal details andstart journey with us</p>
+      <i class="fa-regular fa-user-plus" id="userIcon"></i>
+      <h1 id="hello">Hello, friend!</h1>
+      <p id="personal">Enter your personal details andstart journey with us</p>
     </div>
     <div class="left">
       <h1>Log In</h1>
@@ -25,10 +26,16 @@
         id="password"
         placeholder="password"
       />
-      <input type="checkbox" id="remember" />
-      <label for="remember">Remember me</label>
-      <a href="">Forgot password?</a>
+      <label class="remember"
+        >Remember me
+        <input type="checkbox" />
+        <span class="checkmark"></span>
+      </label>
+      <a href="" id="forgot">Forgot password?</a>
       <button type="submit">LOG IN</button>
+      <p>Or connect with</p>
+      <i class="fa-brands fa-github" id="github"></i>
+      <i class="fa-brands fa-linkedin-in" id="linkedin"></i>
     </div>
   </body>
 </html>

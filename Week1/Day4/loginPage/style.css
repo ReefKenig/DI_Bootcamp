@@ -6,12 +6,31 @@ body {
     rgb(60, 0, 60) 50%,
     rgb(170, 0, 170) 100%
   );
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
 }
 
 .left {
   float: left;
+  padding-left: 25%;
+  padding-top: 12%;
 }
 
 .right {
   float: right;
+  padding-right: 25%;
+  padding-top: 12%;
+}
+
+#remember,
+#forgot {
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+}
+
+input:checked ~ .checkmark {
+  background-color: #8d14d3;
 }
