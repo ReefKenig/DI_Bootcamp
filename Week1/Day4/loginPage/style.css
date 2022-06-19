@@ -3,7 +3,15 @@ body {
     to right,
     rgb(230, 230, 230) 0%,
     rgb(230, 230, 230) 50%,
-    purple 50%,
-    purple 100%
+    rgb(60, 0, 60) 50%,
+    rgb(170, 0, 170) 100%
   );
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
