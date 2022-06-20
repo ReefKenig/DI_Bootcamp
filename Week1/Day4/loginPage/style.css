@@ -14,15 +14,45 @@ body {
   float: left;
   padding-left: 25%;
   padding-top: 12%;
+  overflow-x: hidden;
 }
 
 .right {
-  align-items: center;
+  text-align: center;
   float: right;
   padding-right: 25%;
   padding-top: 12%;
+  color: white;
 }
 
-input {
-  width: 100%;
+input[type="password"],
+input[type="email"] {
+  width: 75%;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(219, 219, 219, 0.705);
+  border: none;
+  padding: 12px 20px;
+  resize: none;
+}
+
+#forgot {
+  text-decoration: none;
+  color: black;
+}
+
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none;
+  color: rgb(116, 116, 116);
+}
+
+#userPlusIcon {
+  font-size: 100px;
+}
+
+.centerContent {
+  text-align: center;
 }

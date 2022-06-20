@@ -13,9 +13,10 @@
   </head>
   <body>
     <div class="right">
-      <i class="fa-solid fa-user-plus"></i>
+      <i class="fa-solid fa-user-plus" id="userPlusIcon"></i>
       <h1 id="hello">Hello, friend!</h1>
-      <p id="personal">Enter your personal details andstart journey with us</p>
+      <p id="personal">Enter your personal details and start journey with us</p>
+      <button id="register">Register</button>
     </div>
     <div class="left">
       <h1>Log In</h1>
@@ -26,16 +27,20 @@
         id="password"
         placeholder="password"
       />
-      <label class="remember"
-        >Remember me
-        <input type="checkbox" />
+      <label class="remember">
+        <input type="checkbox" />Remember me
         <span class="checkmark"></span>
       </label>
       <a href="" id="forgot">Forgot password?</a>
-      <button type="submit">LOG IN</button>
-      <p>Or connect with</p>
-      <i class="fab fa-github"></i>
-      <i class="fab fa-linkedin-in"></i>
+      <button class="centerContent" type="submit" id="login">LOG IN</button>
+      <p class="crossingLine centerContent" id="connect">Or connect with</p>
+      <a href="https://www.linkedin.com/in/reef-kenig-016a94223/">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/OshiroSama">
+        <i class="fab fa-github"></i>
+      </a>
+      <p class="centerContent">&copy; 2022</p>
     </div>
   </body>
 </html>
