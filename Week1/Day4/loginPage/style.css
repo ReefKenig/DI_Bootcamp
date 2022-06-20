@@ -1,8 +1,8 @@
 body {
   background: linear-gradient(
     to right,
-    rgb(230, 230, 230) 0%,
-    rgb(230, 230, 230) 50%,
+    rgb(240, 240, 240) 0%,
+    rgb(240, 240, 240) 50%,
     rgb(60, 0, 60) 50%,
     rgb(170, 0, 170) 100%
   );
@@ -17,20 +17,12 @@ body {
 }
 
 .right {
+  align-items: center;
   float: right;
   padding-right: 25%;
   padding-top: 12%;
 }
 
-#remember,
-#forgot {
-  display: inline-block;
-}
-
 input {
   width: 100%;
-}
-
-input:checked ~ .checkmark {
-  background-color: #8d14d3;
 }
