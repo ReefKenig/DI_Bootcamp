@@ -56,3 +56,14 @@ a:hover {
 .centerContent {
   text-align: center;
 }
+
+#login {
+  display: block;
+  margin-top: 25px;
+  transform: translateX(150%);
+}
+
+#linkedinIcon,
+#githubIcon {
+  display: inline-flexbox;
+}
