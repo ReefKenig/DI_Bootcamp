@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  width: 90vw;
+  height: 90vh;
+  background-image: url(https://media.istockphoto.com/vectors/world-map-vector-id1220187238?k=20&m=1220187238&s=612x612&w=0&h=9Ew8z1UmJJoeuivDl7qKgPzw8NrMd7os4SmsA5YQm34=);
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
