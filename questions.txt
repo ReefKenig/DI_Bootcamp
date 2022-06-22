@@ -1,9 +1,0 @@
-landing page:
-- what is the correct way to divide elements to sections so they will be displayed in the positions i want them to be?
-log in:
-- create a box so the content is as small as in the example (at the center of the page)
-- gradient half of the screen in diagonal like the example
-- correctly position everything
-- put text with crossing lines on the sides
-- design the log in and register buttons
-shopping:
