@@ -1,0 +1,69 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  column-gap: 5%;
+  row-gap: 10%;
+}
+
+.cube {
+  width: 10em;
+  height: 10em;
+  background-color: yellow;
+  border: 1px solid black;
+  display: inline;
+}
+
+.col1 {
+  grid-column: 1 / 2;
+}
+
+.col4 {
+  grid-column: 2 / 3;
+  grid-row: 4;
+}
+
+.col5 {
+  grid-column: 3 / 4;
+  grid-row: 4;
+}
+
+.col6 {
+  grid-column: 4 / 5;
+  grid-row: 4;
+}
+.col7 {
+  grid-column: 5 / 6;
+  grid-row: 4;
+}
+
+.col10 {
+  grid-column: 7 / 8;
+}
+
+.row1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.row3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.row5 {
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.row7 {
+  grid-row-start: 7;
+  grid-row-end: 8;
+}

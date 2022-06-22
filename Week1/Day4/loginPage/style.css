@@ -60,10 +60,24 @@ a:hover {
 #login {
   display: block;
   margin-top: 25px;
-  transform: translateX(150%);
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 14px 100px;
+  font-size: large;
+  text-align: center;
 }
 
 #linkedinIcon,
 #githubIcon {
-  display: inline-flexbox;
+  display: inline;
+}
+
+#register {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  font-size: larger;
+  margin-top: 25px;
 }
