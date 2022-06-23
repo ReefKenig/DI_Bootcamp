@@ -1,0 +1,11 @@
+#signIn {
+  width: 200px;
+}
+
+#badgeNew {
+  background-color: rgb(82, 135, 214);
+}
+
+.badge-pill {
+  background-color: gray;
+}
