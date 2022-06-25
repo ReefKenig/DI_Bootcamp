@@ -1,0 +1,109 @@
+nav {
+  list-style-type: none;
+  margin: -10px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: black;
+}
+
+nav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Tahoma", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+nav a:hover {
+  background-color: navy;
+}
+
+.logoImage {
+  float: left;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+body {
+  background-image: url(C:\\Users\\rkeni\\Downloads\\thor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.infoSection {
+  margin-top: 27%;
+  margin-left: 6%;
+}
+
+h1 {
+  font-family: Marvel;
+  font-size: 100px;
+}
+
+p {
+  font-family: fantasy;
+  font-size: 33px;
+  text-shadow: -1px -1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255),
+    -1px 1px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255);
+}
+
+/* small devices */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 35px;
+  }
+  nav {
+    background-color: yellow;
+  }
+  nav a {
+    color: black;
+  }
+  h1,
+  p {
+    display: block;
+  }
+}
+
+/* medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 25px;
+  }
+  nav {
+    background-color: lightgreen;
+  }
+  nav a {
+    color: black;
+  }
+}
+
+/* large devices */
+@media (min-width: 992px) and (max-width: 1999px) {
+  nav {
+    background-color: red;
+  }
+  nav a {
+    color: white;
+  }
+  h1,
+  p {
+    display: inline;
+  }
+}
+/* extra large devices */
+@media (min-width: 1200px) {
+  nav {
+    background-color: black;
+  }
+  nav a {
+    color: white;
+  }
+}
