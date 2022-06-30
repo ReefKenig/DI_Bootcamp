@@ -10,21 +10,25 @@
     <title>Landing Page</title>
   </head>
   <body>
-    <nav>
-      <a class="brand" href="#!">Start Bootstrap</a>
-      <a class="btn" href="#signup">Sign Up</a>
-    </nav>
-    <div class="text-center text-white"></div>
-    <h1>Generate more leads with a professional landing page!</h1>
-    <form class="form-subscribe" id="contact-form">
-      <div class="row">
-        <div class="col">
-          <input id="emailAddress" type="email" placeholder="Email Address" />
-        </div>
-        <div class="col-auto">
-          <button id="submitButton" type="submit">Submit</button>
-        </div>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a class="brand" href="#!">Start Bootstrap</a>
+        </li>
+        <li>
+          <button id="signIn">Sign In</button>
+        </li>
+      </ul>
+    </div>
+    <div class="centerContent">
+      <div class="firstRow">
+        <h1>Generate more leads with a professional landing page!</h1>
       </div>
-    </form>
+      <div class="secondRow">
+        <input type="email" placeholder="Enter your email..." />
+        <button id="signUp">Sign up!</button>
+      </div>
+    </div>
+    <div class="bottomContent"></div>
   </body>
 </html>

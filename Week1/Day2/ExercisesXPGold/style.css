@@ -1,35 +1,23 @@
 body {
   margin: 0;
-  font-family: Lato;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url(https://images6.alphacoders.com/317/thumb-1920-317266.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-nav {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  background-color: aliceblue;
+.navbar {
+  background-color: rgb(198, 212, 221);
 }
 
-.brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  text-decoration: none;
-  white-space: nowrap;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
-.btn {
-}
-
-.btnPrimary {
+li {
+  display: inline-block;
 }
