@@ -1,3 +1,4 @@
+html,
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@ body {
 }
 
 .navbar {
-  background-color: rgb(198, 212, 221);
+  background-color: rgb(241, 250, 255);
 }
 
 ul {
@@ -20,4 +21,116 @@ ul {
 
 li {
   display: inline-block;
+}
+
+.navElem {
+  margin-top: 8px;
+  padding-bottom: 8px;
+}
+
+#bootstrap {
+  float: left;
+  margin-left: 200px;
+  margin-top: 13px;
+}
+
+#bootstrap > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+#signIn {
+  float: right;
+  margin-right: 200px;
+}
+
+#signIn > li > button {
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.centerContent {
+  text-align: center;
+  padding-top: 13%;
+}
+
+.centerContent > h1 {
+  color: white;
+  font-size: 60px;
+}
+
+button {
+  background-color: rgb(15, 127, 255);
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: rgb(0, 106, 228);
+  transition: 0.4s;
+}
+
+#email {
+  width: 600px;
+  font-size: 22px;
+  text-indent: 15px;
+  border-style: none;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 10px;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+#signUp {
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.bottomContent {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(241, 250, 255);
+  text-align: center;
+}
+
+.bottomContent > * {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 70px;
+}
+
+.bottomLeft {
+  right: 14%;
+}
+
+.bottomMiddle {
+}
+
+.bottomRight {
+  left: 14%;
+}
+
+i {
+  color: rgb(15, 127, 255);
+}
+
+h2 {
+  font-size: 36px;
+}
+
+p {
+  color: grey;
+  font-size: 22px;
 }
