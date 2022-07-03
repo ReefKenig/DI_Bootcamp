@@ -21,7 +21,7 @@ for (i = 0; i < people.length; i++) {
 }
 
 // Ex 2
-let colors = ["Blue", "Red", "Green", "Purple", "Yellow"];
+let colors = ["pink", "lavender", "magenta", "yellow", "cyan"];
 let suffixes = ["st", "nd", "rd", "th"];
 for (i = 0; i < colors.length; i++) {
   if (i <= 2) {
@@ -34,10 +34,10 @@ for (i = 0; i < colors.length; i++) {
 }
 
 // Ex 3
-// let answer = prompt("Enter a number");
-// while (isNaN(answer) || answer < 10) {
-//   answer = prompt("Again!");
-// }
+let answer = prompt("Enter a number");
+while (isNaN(answer) || answer < 10) {
+  answer = prompt("Again!");
+}
 
 // Ex 4
 let building = {
