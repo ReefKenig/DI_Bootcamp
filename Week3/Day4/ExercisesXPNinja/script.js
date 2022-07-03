@@ -30,24 +30,23 @@ console.log(requiredYear);
 // Ex 2
 zipCode = prompt("Enter zip code");
 // Part 1
-// if (
-//   zipCode.length == 5 &&
-//   stringOnlyDigits(zipCode) == true &&
-//   noWhiteSpace(zipCode) == true
-// ) {
-//   console.log("success");
-// } else {
-//   console.log("error");
-// }
+if (
+  zipCode.length == 5 &&
+  stringOnlyDigits(zipCode) == true &&
+  noWhiteSpace(zipCode) == true
+) {
+  console.log("success");
+} else {
+  console.log("error");
+}
 // Part 2
-let reg = new RegExp(`^\d{5}$`);
-console.log(zipCode.match(reg));
-if (zipCode.match(reg) != null) {
+let reg = /^\d{5}$/;
+if (zipCode.match(reg)) {
   console.log("success");
 } else {
   console.log("error");
 }
 // Ex 3
-// let word = prompt("Type a word");
-// let noVowels = new RegExp(/[a,i,o,u,e]/g, "g");
-// console.log(word.replace(noVowels, "R"));
+let word = prompt("Type a word");
+let noVowels = new RegExp(/[a,i,o,u,e]/g, "g");
+console.log(word.replace(noVowels, "R"));
