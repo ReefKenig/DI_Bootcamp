@@ -1,0 +1,22 @@
+body {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  margin-top: 320px;
+}
+
+.buttonsContainer {
+  display: inline-flex;
+}
+
+.belowButtonText {
+  display: block;
+}
+
+.insideButtonText {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+}
