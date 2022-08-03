@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  margin: 5px;
+  flex: 1;
+  height: 50px;
+  width: 50px;
+}
+
+.item1 {
+  background: orangered;
+}
+.item2 {
+  background: lightsalmon;
+}
+.item3 {
+  background: brown;
+}
