@@ -1,25 +1,32 @@
-const translate = () => {
-  const xhr = new XMLHttpRequest();
+const urls = [
+  "https://swapi.dev/api/people/1/",
+  "https://swapi.dev/api/people/2/",
+  "https://swapi.dev/api/people/3/",
+];
 
-  xhr.withCredentials = true;
-
-  xhr.open(
-    "POST",
-    "https://google-translate1.p.rapidapi.com/language/translate/v2"
-  );
-  xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
-  xhr.setRequestHeader(
-    "X-RapidAPI-Key",
-    "f4bdcee8bfmshade90315421d91fp1f1a3ajsna093391a7111"
-  );
-  xhr.setRequestHeader("X-RapidAPI-Host", "google-translate1.p.rapidapi.com");
-
-  const text = document.getElementById("translate").value;
-  const from = document.getElementById("from").value;
-  const to = document.getElementById("to").value;
-
-  xhr.send(`q=${text}&source=${from}&target=${to}`);
-  xhr.onload = function () {
-    console.log(xhr.response);
-  };
+const starWarsCharacter = (url) => {
+  return new Promise((resolve, reject) => {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", url);
+    xhr.send();
+    xhr.onload = function () {
+      if (xhr.status != 200) {
+        reject("You have failed me for the last time " + xhr.status);
+      } else {
+        resolve(JSON.parse(xhr.response));
+      }
+    };
+  });
 };
+
+const promises = urls.map((url) => {
+  return starWarsCharacter(url);
+});
+
+Promise.all(promises)
+  .then((values) => {
+    console.log(values);
+  })
+  .catch((e) => {
+    console.log(e);
+  });

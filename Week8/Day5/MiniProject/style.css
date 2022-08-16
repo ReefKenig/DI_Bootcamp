@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(39, 39, 107);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#headline,
+input[type="text"],
+button {
+  color: white;
+}
+
+#headline {
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form {
+  line-height: 19px;
+}
+
+input[type="text"] {
+  background-color: rgb(39, 39, 107);
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+  outline: none;
+}
+
+::placeholder {
+  opacity: 1;
+}
+
+button {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  padding: 12px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(220, 0, 0);
+}
+
+.card {
+  background-color: white;
+}
+
+.place,
+.description {
+  color: rgb(98, 98, 98);
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
