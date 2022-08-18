@@ -1,32 +1,45 @@
-const urls = [
-  "https://swapi.dev/api/people/1/",
-  "https://swapi.dev/api/people/2/",
-  "https://swapi.dev/api/people/3/",
-];
+// const getUsers = async () => {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+//     const data = await response.json();
+//     return data;
+//   } catch (e) {
+//     throw Error(e.message);
+//   }
+// };
 
-const starWarsCharacter = (url) => {
-  return new Promise((resolve, reject) => {
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", url);
-    xhr.send();
-    xhr.onload = function () {
-      if (xhr.status != 200) {
-        reject("You have failed me for the last time " + xhr.status);
-      } else {
-        resolve(JSON.parse(xhr.response));
-      }
-    };
-  });
-};
+// getUsers()
+//   .then((res) => console.log(res))
+//   .catch((e) => console.log(e));
 
-const promises = urls.map((url) => {
-  return starWarsCharacter(url);
-});
+// function buyOranges() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(console.log("Bought oranges"));
+//     }, 3000);
+//   });
+// }
 
-Promise.all(promises)
-  .then((values) => {
-    console.log(values);
-  })
-  .catch((e) => {
-    console.log(e);
-  });
+// function cutOranges() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(console.log("Oranges have been cut"));
+//     }, 2000);
+//   });
+// }
+
+// function orangeJuice() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(console.log("Orange juice ready!"));
+//     }, 1000);
+//   });
+// }
+
+// async function executionProcess() {
+//   await buyOranges();
+//   await cutOranges();
+//   await orangeJuice();
+// }
+
+// executionProcess();
