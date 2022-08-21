@@ -19,7 +19,8 @@ async function getCharacter() {
     const response = await fetch(request);
     if (response.status != 200) {
       console.log("Catch 1: Person doesn't exist");
-      return new Error("Person doesn't exist");
+      displayError();
+      return new Error();
     }
     const obj = await response.json();
     let planet = "";
@@ -28,20 +29,34 @@ async function getCharacter() {
       const planetObj = await planetResponse.json();
       planet = planetObj.name;
     } catch (error) {
-      return error;
+      displayError();
+      return new Error();
     }
     const results = {
       name: obj.name,
-      height: obj.height,
-      gender: obj.gender,
-      birthYear: obj.birth_year,
-      homeWorld: planet,
+      height: `Height: ${obj.height}`,
+      gender: `Gender: ${obj.gender}`,
+      birthYear: `Birth Year: ${obj.birth_year}`,
+      homeWorld: `Home World: ${planet}`,
     };
     return results;
   } catch (error) {
     console.log("Catch 2: Person doesn't exist");
-    return new Error("Person doesn't exist");
+    displayError();
+    return new Error();
   }
+}
+
+function displayError() {
+  Object.keys(fields).forEach((key) => {
+    loadingDiv.style.display = "none";
+    if (key === "name") {
+      fields[key].innerHTML = "Person doesn't exist";
+      fields[key].style.display = "block";
+    } else {
+      fields[key].style.display = "none";
+    }
+  });
 }
 
 charFindButton.addEventListener("click", function () {
@@ -57,8 +72,5 @@ charFindButton.addEventListener("click", function () {
       });
       loadingDiv.style.display = "none";
     })
-    .catch(() => {
-      fields.name.style.display = "block";
-      fields.name.innerHTML = "Person doesn't exist";
-    });
+    .catch();
 });
