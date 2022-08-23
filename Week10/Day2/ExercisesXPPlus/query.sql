@@ -1,7 +1,7 @@
 CREATE DATABASE bootcamp;
 
 CREATE TABLE students(
-	id INT GENERATED ALWAYS AS IDENTITY,
+	id serial,
 	last_name varchar(255),
 	first_name varchar(255),
 	birth_date date
