@@ -47,6 +47,11 @@ ORDER BY price asc
 LIMIT 10
 
 -- Task 11
+SELECT title, MIN(rental_rate) as price
+FROM film
+GROUP BY title
+ORDER BY price asc
+LIMIT 10 OFFSET 10
 
 -- Task 12
 SELECT amount, payment_date
