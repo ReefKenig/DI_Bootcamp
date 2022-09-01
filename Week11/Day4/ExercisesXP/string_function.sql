@@ -35,4 +35,4 @@ ORDER BY first_name;
 
 -- 7
 SELECT first_name, concat(salary, '$') "SALARY"
-FROM employees
+FROM employees;
