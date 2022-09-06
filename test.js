@@ -43,3 +43,6 @@
 // }
 
 // executionProcess();
+
+// const getUsers = require("./test2.js");
+// getUsers().then((e) => console.log(e));
