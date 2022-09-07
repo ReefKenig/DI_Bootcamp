@@ -8,32 +8,21 @@ function saveTask(newTask) {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-const name = document.getElementById("name");
-const description = document.getElementById("description");
-const startDate = document.getElementById("start_date");
-const endDate = document.getElementById("end_date");
+const form = document.forms[0];
 
-document.forms[0].onsubmit = function (event) {
+form.onsubmit = (event) => {
   event.preventDefault();
-  console.log("I am working!!");
+  const name = form.name.value;
+  const description = form.description.value;
+  const startDate = form.start_date.value;
+  const endDate = form.end_date.value;
   const task = {
-    name: name.value,
-    description: description.value,
-    startDate: new Date(startDate.value),
-    endDate: new Date(endDate.value),
+    name: name,
+    description: description,
+    startDate: startDate,
+    endDate: endDate,
     isCompleted: false,
   };
   saveTask(task);
   location.href = TASKS_PAGE;
 };
-// submitButton.addEventListener("click", function (event) {
-//   event.preventDefault();
-//   const task = {
-//     name: name.value,
-//     description: description.value,
-//     startDate: new Date(startDate.value),
-//     endDate: new Date(endDate.value),
-//     isCompleted: false,
-//   };
-//   saveTask(task);
-// });
