@@ -17,22 +17,3 @@
 .ended {
   background-color: rgba(255, 43, 43, 0.852);
 }
-======= .task_card {
-  border: 2px solid black;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-left: 10px;
-  width: 45%;
-}
-
-.completed {
-  background-color: rgba(20, 210, 20, 0.866);
-}
-
-.uncompleted {
-  background-color: rgba(251, 247, 30, 0.881);
-}
-
-.ended {
-  background-color: rgba(255, 43, 43, 0.852);
-}
