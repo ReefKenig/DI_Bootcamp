@@ -1,14 +1,14 @@
-import './App.css';
-import UserFavoriteColors from './UserFavoriteColors';
-import Exercise4 from './Exercise4';
+import "./App.css";
+import UserFavoriteColors from "./UserFavoriteColors";
+import Exercise4 from "./Exercise4";
 
 function App() {
   const myelement = <h1>I Love JSX!</h1>;
   const sum = 5 + 5;
   const user = {
-    first_name: 'Bob',
-    last_name: 'Dylan',
-    fav_animals : ['Horse','Turtle','Elephant','Monkey']
+    first_name: "Bob",
+    last_name: "Dylan",
+    fav_animals: ["Horse", "Turtle", "Elephant", "Monkey"],
   };
   return (
     <div className="App">
