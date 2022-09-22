@@ -10,8 +10,6 @@ const app = express();
 // Set the view engine to EJS
 app.set("view engine", "ejs");
 
-app.use("/", express.static(__dirname + "/public"));
-
 app.get("/home", (req, res) => {
   res.render("pages/index");
 });
