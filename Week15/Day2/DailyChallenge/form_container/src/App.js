@@ -17,7 +17,11 @@ class App extends Component {
   }
 
   handleChange = (event) => {
-    return event.target.checked;
+    const { value, name, type, checked } = event.target;
+
+    type === "checkbox"
+      ? this.setState({ [name]: checked })
+      : this.setState({ [name]: value });
   };
 
   render() {
@@ -119,7 +123,25 @@ class App extends Component {
           <button className="submit">Submit</button>
         </form>
         <hr />
-        <div className="entered-info"></div>
+        <div className="entered-info">
+          <h2>Entered information:</h2>
+          <p>
+            Your name: {this.state.firstName} {this.state.lastName}
+          </p>
+          <p>Your age: {this.state.age}</p>
+          <p>Your gender: {this.state.gender}</p>
+          <p>Your destination: {this.state.destination}</p>
+          <p>Your dietary restrictions: </p>
+          <div className="restrictions">
+            <span>**Nuts free : {this.state.nutsFree ? " Yes" : "No"}</span>{" "}
+            <br />
+            <span>
+              **Lactose free : {this.state.lactoseFree ? " Yes" : "No"}
+            </span>{" "}
+            <br />
+            <span>**Vegan meal : {this.state.isVegan ? " Yes" : "No"}</span>
+          </div>
+        </div>
       </>
     );
   }
