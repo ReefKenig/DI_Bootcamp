@@ -1,3 +1,4 @@
 {
-  "workbench.colorTheme": "Vite Theme Night"
+  "workbench.colorTheme": "Vite Theme Night",
+  "git.ignoreLimitWarning": true
 }
