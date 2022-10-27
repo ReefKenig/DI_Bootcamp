@@ -4,55 +4,42 @@ import { fetchPictures } from "../redux/actions";
 
 const Searchbar = (props) => {
   const [termState, setTerm] = useState([]);
-  // const [picturesState, setPictures] = useState([]);
-
-  const handleChange = (e) => {
-    setTerm(e.target.value);
-  };
 
   return (
     <div>
-      <input type="text" onChange={handleChange} />
+      <input type="text" onChange={(e) => setTerm(e.target.value)} />
       <button onClick={() => props.fetchImages(termState)}>Search</button>
       <br />
-      <a
-        href="#"
+      <button
         style={{ paddingRight: "10px" }}
         onClick={() => props.fetchImages("Star Wars")}
       >
         Star Wars
-      </a>
-      <a
-        href="#"
+      </button>
+      <button
         style={{ paddingRight: "10px" }}
         onClick={() => props.fetchImages("Sonic the Hedgehog")}
       >
         Sonic the Hedgehog
-      </a>
-      <a
-        href="#"
+      </button>
+      <button
         style={{ paddingRight: "10px" }}
         onClick={() => props.fetchImages("Demon Slayer")}
       >
         Demon Slayer
-      </a>
-      <a
-        href="#"
+      </button>
+      <button
         style={{ paddingRight: "10px" }}
         onClick={() => props.fetchImages("Ace Attorney")}
       >
         Ace Attorney
-      </a>
+      </button>
     </div>
   );
-};
-
-const mapStateToProps = (state) => {
-  return { pictures: state.pictures };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return { fetchImages: (term) => dispatch(fetchPictures(term)) };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Searchbar);
+export default connect(null, mapDispatchToProps)(Searchbar);

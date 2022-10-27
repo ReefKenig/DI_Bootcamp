@@ -2,14 +2,17 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
-import thunk from "redux-thunk";
+import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
 
-import { pictureReducer } from "./redux/reducers";
+import { age_reducer } from "./redux/reducers";
 
-const store = createStore(pictureReducer, applyMiddleware(thunk));
+const logAction = (store) => (next) => (action) => {
+  console.log(action);
+};
+
+const store = createStore(age_reducer, applyMiddleware(logAction));
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
