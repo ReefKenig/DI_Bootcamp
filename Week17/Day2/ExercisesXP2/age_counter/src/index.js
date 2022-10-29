@@ -7,10 +7,7 @@ import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
 
 import { age_reducer } from "./redux/reducers";
-
-const logAction = (store) => (next) => (action) => {
-  console.log(action);
-};
+import { logAction } from "./redux/middlewares";
 
 const store = createStore(age_reducer, applyMiddleware(logAction));
 
