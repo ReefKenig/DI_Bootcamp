@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { deletePost } from "../redux/actions";
 
@@ -23,7 +23,9 @@ const Post = (props) => {
       <>
         <h4>{post[0].title}</h4>
         <p>{post[0].body}</p>
-        <button onClick={() => handleClick(post.id)}>Delete Post</button>
+        <Link to="/">
+          <button onClick={() => handleClick(post.id)}>Delete Post</button>
+        </Link>
       </>
     );
   }
