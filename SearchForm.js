@@ -1,10 +1,19 @@
+import { useState } from "react";
 import { connect } from "react-redux";
-import { search_movie, fetch_movies, set_loading } from "../redux/actions";
+import { fetch_movies, set_loading } from "../redux/actions";
 
 const SearchForm = props => {
-  const handleChange = e => {};
+  const [text, setText] = useState("");
 
-  const handleSubmit = e => {};
+  const handleChange = e => {
+    setText(e.target.value);
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    props.fetch(text);
+    props.load();
+  };
 
   return (
     <div className="jumbotron jumbotron-fluid mt-5 text-center">
@@ -29,8 +38,11 @@ const SearchForm = props => {
   );
 };
 
-const mapStateToProps = state => {};
+const mapDispatchToProps = dispatch => {
+  return {
+    fetch: term => dispatch(fetch_movies(term)),
+    load: () => dispatch(set_loading)
+  };
+};
 
-const mapDispatchToProps = dispatch => {};
-
-export default connect(mapStateToProps, mapDispatchToProps)(SearchForm);
+export default connect(null, mapDispatchToProps)(SearchForm);

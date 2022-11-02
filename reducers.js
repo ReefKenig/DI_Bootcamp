@@ -9,8 +9,6 @@ const initState = {
 
 export const rootReducer = (state = initState, action = {}) => {
   switch (action.type) {
-    case SEARCH_MOVIE:
-      return { ...state, term: action.payload, loading: false };
     case FETCH_MOVIES:
       return { ...state, movies: action.payload, loading: false };
     case FETCH_MOVIE:

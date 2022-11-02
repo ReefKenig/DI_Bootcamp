@@ -3,17 +3,16 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 import Movie from "./components/Movie";
-import { connect } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App(props) {
+function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
         <Routes>
-          <Route exact path="/" component={<Landing />} />
-          <Route exact path="/movie/:id" component={<Movie />} />
+          <Route exact path="/" element={<Landing />} />
+          <Route exact path="/movie/:id" element={<Movie />} />
         </Routes>
         <Footer />
       </div>
@@ -21,8 +20,4 @@ function App(props) {
   );
 }
 
-const mapStateToProps = state => {
-  return { loading: state.loading };
-};
-
-export default connect(mapStateToProps)(App);
+export default App;
