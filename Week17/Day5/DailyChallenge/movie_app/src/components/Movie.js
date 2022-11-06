@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { fetch_movie, set_loading } from "../redux/actions";
 import Spinner from "./Spinner";
 
