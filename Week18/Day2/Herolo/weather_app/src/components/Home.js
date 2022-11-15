@@ -6,7 +6,6 @@ const Home = () => {
     <>
       <h1>Weather App</h1>
       <SearchForm />
-      <FutureWeather city_name="ABC" city_id={123} />
     </>
   );
 };

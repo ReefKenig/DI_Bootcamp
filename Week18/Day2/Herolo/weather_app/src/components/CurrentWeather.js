@@ -8,24 +8,25 @@ import {
 
 const CurrentWeather = (props) => {
   const [is_fav, change_fav] = useState(false);
+  const city_id = props.city_id;
+  const city_name = props.city_name;
+  const weather = props.forecast(city_id);
+  const description = weather.Headline.Text;
+  const minTemp = weather.DailyForecasts[0].Temperature.Minimum.Value;
+  const maxTemp = weather.DailyForecasts[0].Temperature.Maximum.Value;
 
   const handleClick = () => {
     if (is_fav) {
       change_fav(false);
-      props.remove(city_key);
+      props.remove(city_id);
     } else {
       change_fav(true);
-      props.add(city_key);
+      props.add(city_id);
     }
   };
 
-  const city_key = Object.keys(props.city)[0];
-  const city_name = Object.values(props.city)[0];
-  const description = props.weather.Headline.Text;
-  const minTemp = props.weather.DailyForecasts[0].Temperature.Minimum.Value;
-  const maxTemp = props.weather.DailyForecasts[0].Temperature.Maximum.Value;
   return (
-    <div className="col-md-3 mb-5">
+    <div>
       <div className="card card-body bg-white text-center h-100">
         <h3 className="card-title">{city_name}</h3>
         <h4>
